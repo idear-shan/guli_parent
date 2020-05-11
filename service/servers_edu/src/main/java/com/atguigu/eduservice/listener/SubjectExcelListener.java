@@ -12,7 +12,7 @@ import java.util.Date;
 public class SubjectExcelListener extends AnalysisEventListener<SubjectData> {
 
     //因为SubjectExcelListener不能交给spring进行管理，需要自己new，不能注入其他对象
-    //不能实现数据库操作..
+    //不能实现数据库操作
     public EduSubjectService subjectService;
     public SubjectExcelListener() {}
     public SubjectExcelListener(EduSubjectService subjectService) {
