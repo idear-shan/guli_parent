@@ -4,8 +4,10 @@ import cn.hutool.core.util.RandomUtil;
 import com.alibaba.excel.EasyExcel;
 import org.junit.Test;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.SimpleFormatter;
 
 
 public class Texcel {
@@ -37,10 +39,11 @@ public class Texcel {
            EasyExcel.read(filename,Exceldome.class,new ExcelRead()).sheet().doRead();
         }
         @Test
-    public void  ss(){
-            String a = "2017-05-06";
-            Date value = Convert.toDate(a);
-            System.out.println(value);
+        public void  ss(){
+       Integer s = 128;
+       Integer d =128;
+            System.out.println(s == d);
+
         }
 
 
